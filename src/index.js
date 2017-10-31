@@ -6,18 +6,17 @@ import AutorBox from './Autor';
 import Home from './Home';
 import registerServiceWorker from './registerServiceWorker';
 
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 
 ReactDOM.render(
     (<BrowserRouter>
-        <div>
-            <Route component={App} />
+        <App>
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/autor" component={AutorBox} />
                 <Route path="/livro" />
             </Switch>
-        </div>
+        </App>
     </BrowserRouter>),
     document.getElementById('root')
 );

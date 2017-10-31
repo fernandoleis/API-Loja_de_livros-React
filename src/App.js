@@ -24,18 +24,9 @@ class App extends Component {
                         </ul>
                     </div>
                 </div>
-                <div>11111</div>
-                {/* <div id="main">
-                    <div className="header">
-                        opa{this.props.children}
-                    </div>
-                    <div className="content" id="content">
-                    
-                    {this.props.children} 
-                    </div>
-                </div> */}
-                <div>111122221</div>
-                <div>88</div>
+                <div id="main">
+                    {this.props.children}
+                </div>
             </div>
 
         );
